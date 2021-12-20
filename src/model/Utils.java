@@ -36,10 +36,10 @@ public class Utils {
 	}
 	
 	public static String formatTime(long millis) {
-            if(millis==0){
-                return "XX-XX-XX";
-            }else{
-                String formattedTime = "";
+		if(millis==0){
+			return "XX-XX-XX";
+		}else{
+			String formattedTime = "";
 
 		int hours = (int) (millis / 3600000);
 		if (hours >= 1) {

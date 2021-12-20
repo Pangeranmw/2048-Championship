@@ -27,7 +27,6 @@ public class ScoreManager {
 			e.printStackTrace();
 		}
 		temp = "TEMP.tmp";
-
 		this.gBoard = gBoard;
 	}
 

@@ -16,7 +16,6 @@ public class Koneksi {
         }
         return conn;
     }
-
     public static ResultSet executeQuery(String query) {
         ResultSet res = null;
         try {

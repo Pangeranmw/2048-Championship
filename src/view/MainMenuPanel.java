@@ -4,6 +4,7 @@ import model.Game;
 import model.Utils;
 
 import java.awt.*;
+import java.io.File;
 
 public class MainMenuPanel extends GuiPanel {
 
@@ -11,7 +12,8 @@ public class MainMenuPanel extends GuiPanel {
 
 	public MainMenuPanel() {
 		super();
-		logo = Utils.scaleImage(logo, "/Users/pangeran.m.w/Downloads/championship2048/Logo2048.png", 3, 3);
+                String f = new File("").getAbsolutePath();
+		logo = Utils.scaleImage(logo, f+"/src/Logo2048.png", 3, 3);
 		int buttonWidth = 180;
 		GuiButton playButton = new GuiButton(50, 330, buttonWidth,  60);
 		playButton.addActionListener(e -> GuiScreen.getInstance().setCurrentPanel("Play"));

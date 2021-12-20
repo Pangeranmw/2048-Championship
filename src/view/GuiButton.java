@@ -82,9 +82,6 @@ public class GuiButton {
 	public void setText(String text){
 		this.text = text;
 	}
-	public String getText(){
-		return text;
-	}
 	public void setActivated(Graphics2D g){
 		Utils.setRectangle(g, white, clickBox);
 		Utils.setRectangle(g, t2048, clickBox);
